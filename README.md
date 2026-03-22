@@ -26,41 +26,41 @@ Architecture:
 ********************************************************************************************************************
 
 Security Configuration:
-SSH access was restricted to a single IP address (my own).
-NSG inbound rule allowing only port 22 for administrative access.
-A public IP address was used temporarily for testing and access.
-Logging enabled via Azure Log Analytics.
-Nginx was installed to validate connectivity and exposed service behavior.
+- SSH access was restricted to a single IP address (my own).
+- NSG inbound rule allowing only port 22 for administrative access.
+- A public IP address was used temporarily for testing and access.
+- Logging enabled via Azure Log Analytics.
+- Nginx was installed to validate connectivity and exposed service behavior.
 
 Challenges:
-I had trouble fully connecting the Log Analytics Workspace with the VM.
-Centralized logging was created, but VM-to-workspace integration remains unresolved.
+- I had trouble fully connecting the Log Analytics Workspace with the VM.
+- Centralized logging was created, but VM-to-workspace integration remains unresolved.
 
 What worked/Validation:
-I managed to connect via SSH successfully, using key-based authentication.
-Verified web server access via Nginx.
-Successfully deployed Azure VM. 
-NSG (Network Security Groups) configuration for SSH restriction.
-Successful creation of a Log Analytics Workspace.
+- I managed to connect via SSH successfully, using key-based authentication.
+- Verified web server access via Nginx.
+- Successfully deployed Azure VM. 
+- NSG (Network Security Groups) configuration for SSH restriction.
+- Successful creation of a Log Analytics Workspace.
 
 Skills demonstrated in the lab:
-Azure networking (VNet, Subnets).
-NSG (Network Security Groups) and access control.
-SSH key-based authentication.
-Security-oriented cloud configuration.
-Linux VM management.
-Web server deployment (Nginx).
+- Azure networking (VNet, Subnets).
+- NSG (Network Security Groups) and access control.
+- SSH key-based authentication.
+- Security-oriented cloud configuration.
+- Linux VM management.
+- Web server deployment (Nginx).
 
 Improvements to the lab:
-Remove public IP and use Azure Bastion.
-Add NSG flow logs for traffic analysis.
-Integrate Microsoft Defender for Cloud.
-Store secrets in Azure Key Vault.
+- Remove public IP and use Azure Bastion.
+- Add NSG flow logs for traffic analysis.
+- Integrate Microsoft Defender for Cloud.
+- Store secrets in Azure Key Vault.
 
 Tools Used:
-Microsoft Azure
-Ubuntu Linux
-Nginx
-SSH
-Azure Network Security Groups
-Azure Log Analytics
+- Microsoft Azure
+- Ubuntu Linux
+- Nginx
+- SSH
+- Azure Network Security Groups
+- Azure Log Analytics
